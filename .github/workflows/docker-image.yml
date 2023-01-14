@@ -1,18 +1,27 @@
-name: Docker Image CI
+name: Publish to Docker Hub
 
 on:
   push:
-    branches: [ "develop" ]
-  pull_request:
-    branches: [ "develop" ]
+    branches:
+      - master
+      - develop
 
 jobs:
-
-  build:
-
+  publish-to-docker:
+    name: Publish to Docker Hub
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag dcs-homepage:latest
+      - uses: actions/checkout@v2
+      - run: |
+          BRANCH=$(git rev-parse --abbrev-ref HEAD)
+          echo "BRANCH: ${BRANCH}"
+          DOCKER_TAGS="${BRANCH},latest"
+          echo "DOCKER_TAGS=${DOCKER_TAGS}" >> $GITHUB_ENV
+      - name: Publish Docker Github Action
+        uses: elgohr/Publish-Docker-Github-Action@v4
+        with:
+          name: unfoldingword/metrics
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          dockerfile: Dockerfile
+          tags: ${{ env.DOCKER_TAGS }}
