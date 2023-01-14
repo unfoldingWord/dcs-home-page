@@ -20,7 +20,7 @@ jobs:
       - name: Publish Docker Github Action
         uses: elgohr/Publish-Docker-Github-Action@v4
         with:
-          name: unfoldingword/metrics
+          name: unfoldingword/dcs-homepage
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           dockerfile: Dockerfile
