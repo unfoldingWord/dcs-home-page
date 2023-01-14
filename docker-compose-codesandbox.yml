@@ -9,10 +9,6 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - type: bind
-        source: ./templates/home.tmpl
-        target: /data/gitea/templates/home.tmpl
-      - type: bind
-        source: ./conf/app.ini-codesandbox
-        target: /data/gitea/conf/app.ini
-
+      - "${PWD}/templates:/data/gitea/templates"
+      - "${PWD}/options/locale:/data/gitea/options/locale"
+      - "${PWD}/conf:/data/gitea/conf
