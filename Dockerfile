@@ -1,2 +1,1 @@
 FROM unfoldingword/dcs:latest
-

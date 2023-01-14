@@ -1,15 +1,15 @@
 version: "3"
 services:
   client:
+    container_name: dcs-home-page
     stdin_open: true
     build:
       context: .
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    user: "${UID}:${GID}"
     volumes:
-      - "./templates:/data/gitea/templates"
-      - "./options/locale:/data/gitea/options/locale"
-      - "./conf:/data/gitea/conf"
+      - "${PWD}/templates:/data/gitea/templates"
+      - "${PWD}/options/locale:/data/gitea/options/locale"
+      - "${PWD}/conf/app.ini:/data/gitea/conf/app.ini"
 
