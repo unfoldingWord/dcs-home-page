@@ -1,0 +1,11 @@
+FROM unfoldingword/dcs:latest-qa
+
+ENV USER richmahn
+ENV GITEA_CUSTOM /data/gitea 
+
+WORKDIR /data/gitea
+
+RUN mkdir conf
+RUN mkdir templates
+COPY ./conf/app.ini conf
+COPY ./templates/home.tmpl templates
