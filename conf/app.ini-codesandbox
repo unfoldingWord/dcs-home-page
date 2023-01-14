@@ -1,6 +1,6 @@
 APP_NAME = DCS
 RUN_MODE = prod
-RUN_USER = git
+RUN_USER = richmahn
 
 [repository]
 ROOT = /data/git/repositories
