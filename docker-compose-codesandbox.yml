@@ -11,4 +11,4 @@ services:
     volumes:
       - "${PWD}/templates:/data/gitea/templates"
       - "${PWD}/options/locale:/data/gitea/options/locale"
-      - "${PWD}/conf:/data/gitea/conf
+      - "${PWD}/conf:/data/gitea/conf"
