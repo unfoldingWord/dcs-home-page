@@ -9,3 +9,6 @@ RUN mkdir /data/gitea/conf
 RUN mkdir /data/gitea/templates
 COPY ./conf/app.ini /data/gitea/conf/app.ini
 COPY ./templates/home.tmpl /data/gitea/templates/home.tmpl
+RUN chown -R git /data
+USER git
+WORKDIR /app
