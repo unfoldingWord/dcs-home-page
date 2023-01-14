@@ -7,7 +7,7 @@
     "docker-compose up": {
       "name": "docker-compose up",
       "command": "docker-compose up",
-      "runAtStart": true
+      "runAtStart": false
     }
   }
 }
