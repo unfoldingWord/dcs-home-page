@@ -1,2 +1,1 @@
-FROM unfoldingword/dcs:latest
-
+FROM unfoldingword/dcs:latest-qa

@@ -7,13 +7,10 @@ A way to design a dynamic, lively homepage for DCS
 `docker compose up`
 
 Then view at http://localhost:3000
-<br/>(You may get a warning about the host being set wrong. That's the URL for the CodeSandbox demo [below])
 
-## Remote view
+## Remove build
 
-Seee at [CodeSandbox](https://codesandbox.io/p/github/unfoldingWord/dcs-homepage/develop?file=%2Ftemplates%2Fhome.tmpl)
-
-View [CodeSandbox Preview](https://gwniog-3000.preview.csb.app/)
+When you update the files, you should be able to see them live at https://gwniog-3000.preview.csb.app/ on CodeSandbox
 
 ## Deploy
 

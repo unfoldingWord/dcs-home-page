@@ -1,6 +1,6 @@
 APP_NAME = DCS
 RUN_MODE = prod
-RUN_USER = git
+RUN_USER = richmahn
 
 [repository]
 ROOT = /data/git/repositories
@@ -16,7 +16,7 @@ APP_DATA_PATH    = /data/gitea
 DOMAIN           = localhost
 SSH_DOMAIN       = localhost
 HTTP_PORT        = 3000
-ROOT_URL         = http://localhost:3000/
+ROOT_URL         = https://gwniog-3000.preview.csb.app/
 DISABLE_SSH      = false
 SSH_PORT         = 22
 SSH_LISTEN_PORT  = 22
