@@ -4,8 +4,12 @@ services:
     container_name: dcs-homepage
     stdin_open: true
     user: "${UID}:${GID}"
+    environment:
+      - USER_UID=1002
+      - USER_GID=1002    
     build:
       context: .
       dockerfile: Dockerfile-codesandbox
     ports:
       - "3000:3000"
+      - "222:22"
