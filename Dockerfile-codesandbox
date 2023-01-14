@@ -3,4 +3,3 @@ FROM unfoldingword/dcs:latest-qa
 RUN mkdir -p /data/gitea/conf
 RUN mkdir -p /data/gitea/templates
 COPY ./conf/app.ini-codesandbox /data/gitea/conf/app.ini
-COPY ./templates/home.tmpl /data/gitea/templates/home.tmpl
