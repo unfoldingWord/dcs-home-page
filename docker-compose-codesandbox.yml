@@ -3,6 +3,7 @@ services:
   client:
     container_name: dcs-homepage
     stdin_open: true
+    user: "${UID}:${GID}"
     build:
       context: .
       dockerfile: Dockerfile-codesandbox
