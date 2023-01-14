@@ -1,6 +1,6 @@
 APP_NAME = DCS
-RUN_MODE = prod
-RUN_USER = richmahn
+RUN_MODE = develop
+RUN_USER = git
 
 [repository]
 ROOT = /data/git/repositories
@@ -54,7 +54,7 @@ PATH = /data/gitea/attachments
 
 [log]
 MODE      = console
-LEVEL     = info
+LEVEL     = debug
 ROUTER    = console
 ROOT_PATH = /data/gitea/log
 
