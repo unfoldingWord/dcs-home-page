@@ -1,0 +1,13 @@
+version: "3"
+services:
+  client:
+    container_name: dcs-home-page
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - "${PWD}/templates/home.tmpl:/data/gitea/templates/home.tmpl"
+      - "${PWD}/conf/app.ini-codesandbox:/data/gitea/conf/app.ini"
