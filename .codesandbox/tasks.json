@@ -6,7 +6,7 @@
   "tasks": {
     "docker-compose up": {
       "name": "docker-compose up",
-      "command": "docker-compose up -f docker-compose-codesandbox.yml",
+      "command": "docker-compose -f docker-compose-codesandbox.yml up",
       "runAtStart": true
     }
   }
