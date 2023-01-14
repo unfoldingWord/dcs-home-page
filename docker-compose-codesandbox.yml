@@ -11,8 +11,8 @@ services:
       context: .
       dockerfile: Dockerfile-codesandbox
     volumes:
-      - "${PWD}/templates:/data/gitea/templates"
-      - "${PWD}/options/locale:/data/gitea/options/locale"
+      - "${PWD}/templates/home.tmpl:/data/gitea/templates/home.tmpl"
+      - "${PWD}/options/locale/locale_en-US.ini:/data/gitea/options/locale/locale_en-US.ini"
       - "${PWD}/conf/app.ini-codesandbox:/data/gitea/conf/app.ini"      
     ports:
       - "3000:3000"
