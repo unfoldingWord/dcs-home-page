@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+    user: "${UID}:${GID}"
     volumes:
       - "./templates:/data/gitea/templates"
       - "./options/locale:/data/gitea/options/locale"

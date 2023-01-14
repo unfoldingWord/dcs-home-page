@@ -11,9 +11,9 @@ Then view at http://localhost:3000
 
 ## Remote view
 
-Seee at [CodeSandbox](https://codesandbox.io/p/github/unfoldingWord/dcs-home-page/develop?file=%2Ftemplates%2Fhome.tmpl)
+Seee at [CodeSandbox](https://codesandbox.io/p/github/unfoldingWord/dcs-homepage/develop?file=%2Ftemplates%2Fhome.tmpl)
 
-View [CodeSandbox Preview](https://v9cgfh-3000.preview.csb.app/)
+View [CodeSandbox Preview](https://gwniog-3000.preview.csb.app/)
 
 ## Deploy
 
