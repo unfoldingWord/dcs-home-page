@@ -10,7 +10,7 @@ Then view at http://localhost:3000
 
 ## Remote build
 
-When you update the files, you should be able to see them live at https://c74229-3000.preview.csb.app/
+When you update the files, you should be able to see them live at https://gwniog-3000.preview.csb.app/
 
 ## Deploy
 
