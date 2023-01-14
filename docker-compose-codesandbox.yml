@@ -9,5 +9,10 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - "${PWD}/templates/home.tmpl:/data/gitea/templates/home.tmpl"
-      - "${PWD}/conf/app.ini-codesandbox:/data/gitea/conf/app.ini"
+      - type: bind
+        source: ./templates/home.tmpl
+        target: /data/gitea/templates/home.tmpl
+      - type: bind
+        source: ./conf/app.ini-codesandbox
+        target: /data/gitea/conf/app.ini
+
