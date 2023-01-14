@@ -7,7 +7,6 @@ services:
       - USER_UID=1002
       - USER_GID=1002
       - USER=richmahn
-    user: "${UID}:${GID}"
     build:
       context: .
       dockerfile: Dockerfile-codesandbox
