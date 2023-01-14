@@ -5,7 +5,7 @@ services:
     stdin_open: true
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile-codesandbox
     ports:
       - "3000:3000"
     volumes:
