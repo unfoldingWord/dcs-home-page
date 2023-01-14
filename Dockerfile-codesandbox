@@ -1,7 +1,35 @@
 FROM unfoldingword/dcs:latest-qa
+LABEL maintainer="maintainers@gitea.io"
+
+EXPOSE 22 3000
+
+RUN apk --no-cache add \
+    bash \
+    ca-certificates \
+    curl \
+    gettext \
+    git \
+    linux-pam \
+    openssh \
+    s6 \
+    sqlite \
+    su-exec \
+    gnupg
+
+RUN addgroup \
+    -S -g 1002 \
+    richmahn && \
+  adduser \
+    -S -H -D \
+    -h /data/git \
+    -s /bin/bash \
+    -u 1002 \
+    -G git \
+    richmahn && \
+  echo "richmahn:*" | chpasswd -e
 
 ENV USER richmahn
-ENV GITEA_CUSTOM /data/gitea 
+ENV GITEA_CUSTOM /data/gitea
 
 WORKDIR /data/gitea
 
@@ -9,8 +37,8 @@ RUN mkdir /data/gitea/conf
 RUN mkdir /data/gitea/templates
 COPY ./conf/app.ini /data/gitea/conf/app.ini
 COPY ./templates/home.tmpl /data/gitea/templates/home.tmpl
-RUN addgroup -g 1002 richmahn
-RUN adduser -u 1002 -h /app -s /bin/bash richmahn richmahn
-RUN chown -R richmahn:richmahn /data
-USER richmahn
-WORKDIR /app
+
+VOLUME ["/data"]
+
+ENTRYPOINT ["/usr/bin/entrypoint"]
+CMD ["/bin/s6-svscan", "/etc/s6"]
