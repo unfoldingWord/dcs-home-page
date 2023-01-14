@@ -1,0 +1,44 @@
+{{template "base/head" .}}
+<div class="page-content home">
+	<div class="ui stackable middle very relaxed page grid">
+		<div class="sixteen wide center aligned centered column">
+			<!-- DCS Customizations - home header content change, logo only -->
+			<div>
+				<img class="logo" width="220" height="220" src="{{AssetUrlPrefix}}/img/logo.svg"/>
+			</div>
+			<!-- END DCS Customizations -->
+			<div class="hero">
+				<h1 class="ui icon header title">
+					{{AppName}}
+				</h1>
+				<h2>{{.locale.Tr "startpage.app_desc"}}</h2>
+			</div>
+		</div>
+	</div>
+	<div class="ui stackable middle very relaxed page grid">
+		<div class="sixteen wide left column">
+			<p class="large">Door43 Content Service (-DCS-) is an online repository for open-licensed Biblical content in any language.</p>
+			<p class="large">qqqDCS is an open project that is managed by <a href="https://unfoldingword.org/"  target="_blank">unfoldingWord</a> and many volunteers.</p>
+		</div>
+		<div class="eight wide left column">
+			<h3>{{svg "octicon-person"}} Get Started</h3>
+			<p class="large">First <a href="{{AppSubUrl}}user/sign_up" rel="nofollow">register</a> for a Door43 account. This account can both be used here on DCS and in apps that connect to DCS.</p>
+			<p class="large">If you are a translator, we suggest you start working in <a href="https://unfoldingword.org/ts" rel="nofollow">translationStudio</a>,  <a href="https://www.autographa.org/" rel="nofollow">Autographa</a>, or  <a href="https://unfoldingword.org/tc/" rel="nofollow">translationCore</a>.</p>
+			<p class="large">To learn how to translate, check, publish, and use our tools, check out <a href="https://unfoldingword.org/academy" rel="nofollow">translationAcademy</a> or view the <a href="http://help.door43.org/en/knowledgebase/15-door43-content-service" rel="nofollow">DCS knowledgebase articles</a>.</p>
+		</div>
+		<div class="eight wide left column">
+			<h3>{{svg "octicon-comment-discussion"}} Communication</h3>
+			<p class="large">If you have questions, you can post them on the <a href="https://team43.slack.com/messages/helpdesk" target="_new">#helpdesk</a> channel in Slack (see below) or email <a href="mailto:help@door43.org">help@door43.org</a>.
+			<p class="large">The Door43 community uses Slack to communicate. When you <a href="https://door43.org/en/contact" rel="nofollow">join Team43 on Slack</a>, you can collaborate with other translators, share your ideas, and find help for your translation, checking, publishing, and technology needs.</p>
+		</div>
+		<div class="sixteen wide left column">
+			<h3>{{svg "octicon-gear"}} Conversion to Door43</h3>
+			<p class="large">Every change made in DCS automatically creates a web page on <a href="https://door43.org/en/" rel="nofollow">Door43</a>.</p>
+			<div>
+				<img class="ui fluid image" src="https://cdn.door43.org/assets/img/dcs_tx_door43.jpg" alt="DCS to Door43 Conversion">
+			</div>
+			<p class="large"><a href="https://door43.org/en/" rel="nofollow">Browse</a> for your content on Door43, or use the "See on Door43" link at the top of any DCS project.</p>
+		</div>
+	</div>
+</div>
+{{template "base/footer" .}}

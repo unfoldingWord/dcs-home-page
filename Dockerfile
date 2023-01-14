@@ -1,0 +1,2 @@
+FROM unfoldingword/dcs:latest
+

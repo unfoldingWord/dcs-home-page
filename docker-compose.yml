@@ -1,0 +1,14 @@
+version: "3"
+services:
+  client:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./templates:/data/gitea/templates"
+      - "./options/locale:/data/gitea/options/locale"
+      - "./conf:/data/gitea/conf"
+
