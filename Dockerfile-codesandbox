@@ -1,6 +1,0 @@
-FROM unfoldingword/dcs:latest-qa
-
-RUN mkdir -p /data/gitea/conf
-RUN mkdir -p /data/gitea/templates
-RUN mkdir -p /data/gitea/options/locale
-COPY ./conf/app.ini-codesandbox /data/gitea/conf/app.ini
