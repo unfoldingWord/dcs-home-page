@@ -6,7 +6,7 @@ A way to design a dynamic, lively homepage for DCS
 
 Install Docker Desktop if you haven't already
 
-Clone this repo on your machine: `git clone https://github.com/unfoldingWord/dcs-homepage`
+Clone this repo on your machine: `git clone https://github.com/unfoldingWord/dcs-homepage.git`
 
 Go into the dirctory this made: `cd dcs-homepage`
 
