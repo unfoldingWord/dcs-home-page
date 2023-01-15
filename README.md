@@ -2,6 +2,10 @@
 
 A way to design a dynamic, lively homepage for DCS
 
+## Develop
+
+Edit templates/home.tmpl to modify the homepage for DCS, using and leaving in the the `{{...}}` variables as needed.
+
 ## Local test
 
 Install Docker Desktop if you haven't already
