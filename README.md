@@ -20,4 +20,4 @@ Then view the homepage at http://localhost:3000
 
 ## Deploy
 
-Copy to your DCS instance's templates/ directory in the `GITEA_CUSTOM` directory (either defined by environment variable or in your app.ini file). See https://docs.gitea.io/en-us/customizing-gitea/ for more info.
+Copy to your DCS instance's templates/ directory in the `GITEA_CUSTOM` directory (either defined by environment variable or in your app.ini file). See https://docs.gitea.io/en-us/customizing-gitea/#customizing-startpage--homepage for more info.
