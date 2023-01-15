@@ -4,13 +4,15 @@ A way to design a dynamic, lively homepage for DCS
 
 ## Local test
 
-`docker compose up`
+Install Docker Desktop if you haven't already
 
-Then view at http://localhost:3000
+Clone this repo on your machine: `git clone https://github.com/unfoldingWord/dcs-homepage`
 
-## Remove build
+Go into the dirctory this made: `cd dcs-homepage`
 
-When you update the files, you should be able to see them live at https://gwniog-3000.preview.csb.app/ on CodeSandbox
+Run: `docker compose up`
+
+Then view the homepage at http://localhost:3000
 
 ## Deploy
 
